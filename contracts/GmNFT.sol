@@ -25,6 +25,8 @@ contract GmNFT is ERC721URIStorage {
     string[] secondWords = ["Ser", "Sir", "Sr"];
     string[] thirdWords = ["Awesome", "Smart", "Nice", "Rich", "Chad", "Boomer"];
 
+    event NewGmNFTMinted(address sender, uint256 tokenId);
+
     constructor() ERC721("GM.", "GM..") {
         console.log("Hello from my not-so-smart contract");
     }
@@ -103,5 +105,7 @@ contract GmNFT is ERC721URIStorage {
 
         // Increment the counter for when the next NFT is minted.
         _tokenIds.increment();
+
+        emit NewGmNFTMinted(msg.sender, newItemId);
     }
 }
