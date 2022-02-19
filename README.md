@@ -1,5 +1,7 @@
 # GM Nfts
 
+[Visit the website](https://nft-starter-project.flipjorge.repl.co/)
+
 Learning project for buildspace course "Mint your own NFT collection and ship a Web3 app to show them off"
 
 To run
