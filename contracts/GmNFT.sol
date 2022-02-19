@@ -26,7 +26,7 @@ contract GmNFT is ERC721URIStorage {
         _safeMint(msg.sender, newItemId);
 
         // Set the NFTs data.
-        _setTokenURI(newItemId, '{"name":"I dont always work on my side projects","description":"but when i do i dont finish them","image":"https://i.imgur.com/bRZEywl.png"}');
+        _setTokenURI(newItemId, "https://jsonkeeper.com/b/ZW0D");
 
         console.log("An NFT w/ ID %s has been minted to %s", newItemId, msg.sender);
 
